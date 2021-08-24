@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/x-icon" href="..\assets\to-do.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Actor&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style/home.css" />
+        <script
+          src="https://kit.fontawesome.com/52e67ff79e.js"
+          crossorigin="anonymous"
+        ></script>
+        <link rel="icon" href="assets/true.png" />
+        <title>To Do</title>
+      </head>
+    
+      <body>
+        <div class="header">
+          <section class="title">To Do List</section>
+          <section class="topHeader">
+            <button id="addTaskButton">Add Task</button>
+          </section>
+        </div>
+    
+        <div id="addForm" class="popup-form">
+          <div class="form-content">
+            <form class="form" method="post" action="/addTask">
+              <section class="form-element">
+                <label for="task_name" class="pop-label">Task name</label>
+                <input type="text" id="task_name" name="taskName" class="field" />
+              </section>
+    
+              <section class="form-element">
+                <label for="due_time" class="pop-label">Due time</label>
+                <input
+                  type="datetime-local"
+                  id="due_time"
+                  name="dueTime"
+                  class="field"
+                />
+              </section>
+    
+              <section class="form-buttons">
+                <button id="add" class="add">Add Task</button>
+              </section>
+            </form>
+          </div>
+        </div>
+        <div id="tasksDiv" class="tasksDiv" behavior="slide"></div>
+      </body>
+      <script src="script/dom.js"></script>
+</html>
