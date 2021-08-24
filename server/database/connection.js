@@ -6,7 +6,6 @@ const {
   DEV_DB_URL,
   DB_URL,
 } = process.env;
-
 let dbUrl = '';
 switch (NODE_ENV) {
   case 'production':
