@@ -2,9 +2,9 @@
 
 ## Team Members :8ball:
 
-[Umar Salah](https://github.com/umarsalah) :bear: 
-[Muath AlKhatib](https://github.com/muath-khatib) :smoking: 
-[Mohammed Haroon](https://github.com/muhammadharoun) :face_with_cowboy_hat: 
+[Umar Salah](https://github.com/umarsalah) 🐻
+[Muath AlKhatib](https://github.com/muath-khatib) 🚬
+[Mohammed Haroon](https://github.com/muhammadharoun) 🤠 
 
 ___
 ## Visit our Site <h4>
