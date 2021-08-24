@@ -1,6 +1,10 @@
 const router = require('express').Router();
 
 const {
+  checkIsUser,
+} = require('../middlewares');
+
+const {
   homePage,
   signIn,
   signUp,
@@ -10,7 +14,7 @@ const {
   serverError,
 } = require('../controllers');
 
-router.get('/home', homePage);
+router.get('/home', checkIsUser, homePage);
 router.get('/signin', signIn);
 router.get('/signup', signUp);
 router.get('/deleteTask/:id', deleteTask);
