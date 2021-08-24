@@ -8,6 +8,9 @@ const {
 
 let dbUrl = '';
 switch (NODE_ENV) {
+  case 'production':
+    dbUrl = NODE_ENV;
+    break;
   case 'development':
     dbUrl = DEV_DB_URL;
     break;
