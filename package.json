@@ -23,9 +23,9 @@
     "nodemon": "^2.0.12"
   },
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js",
-    "test": "test jest"
+    "start": "NODE_ENV=production node server/index.js",
+    "dev": "NODE_ENV=development nodemon server/index.js",
+    "test": "NODE_ENV=test jest"
   },
   "repository": {
     "type": "git",
