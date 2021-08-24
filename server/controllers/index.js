@@ -1,6 +1,8 @@
 const homePage = require('./home');
 const signIn = require('./signIn/signInPage');
 const signUp = require('./signUp/signUpPage');
+const addTask = require('./Addtask');
+
 const { clientError, serverError } = require('./error');
 
 module.exports = {
@@ -8,5 +10,6 @@ module.exports = {
   signIn,
   signUp,
   clientError, 
-  serverError
+  serverError,
+  addTask,
 };

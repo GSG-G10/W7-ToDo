@@ -24,7 +24,7 @@ switch (NODE_ENV) {
     throw new Error('No Database URL!!!');
 }
 
-module.exports = new Pool(dbUrl, {
+module.exports = new Pool({
   connectionString: dbUrl,
   ssl: {
     rejectUnauthorized: false,
