@@ -14,25 +14,29 @@
     <title>Sign up</title>
   </head>
   <body>
-    <div id="login-box">
-      <div class="left">
-        <h1>Sign up</h1>
+    <form class="form" method="post" action="/addUser">
+      <div id="login-box">
+        <div class="left">
+          <h1>Sign up</h1>
 
-        <input type="text" name="username" placeholder="Username" />
-        <input type="text" name="email" placeholder="E-mail" />
-        <input type="password" name="password" placeholder="Password" />
-        <input type="password" name="password" placeholder="Retype password" />
+          <input type="text" name="username" placeholder="Username" />
+          <input type="text" name="email" placeholder="E-mail" />
+          <input type="password" name="password" placeholder="Password" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Retype password"
+          />
 
-        <form class="form" method="post" action="/addUser">
           <button id="signUp" name="signup_submit">Sign me up</button>
-        </form>
+        </div>
+        <div class="right">
+          <img
+            src="https://static.codehs.com/img/signup/individual.png"
+            alt="Welcome"
+          />
+        </div>
       </div>
-      <div class="right">
-        <img
-          src="https://static.codehs.com/img/signup/individual.png"
-          alt="Welcome"
-        />
-      </div>
-    </div>
+    </form>
   </body>
 </html>
