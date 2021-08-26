@@ -1,7 +1,7 @@
 const { getTasksQuery } = require('../database/queries');
 
-module.exports = (req, res) => {
+module.exports = (req, res, next) => {
   getTasksQuery(2)
     .then((results) => res.json(results.rows))
-    .catch((err) => res.json(err));
+    .catch((err) => next(err));
 };
