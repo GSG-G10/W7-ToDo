@@ -19,15 +19,11 @@
         <div class="left">
           <h1>Sign up</h1>
 
-          <input type="text" name="username" placeholder="Username" />
-          <input type="text" name="email" placeholder="E-mail" />
-          <input type="password" name="password" placeholder="Password" />
-          <input
-            type="password"
-            name="password"
-            placeholder="Retype password"
-          />
-
+          <input type="text" name="username" placeholder="Username" minlength="3" maxlength="20" required />
+          <input type="email" name="email" placeholder="E-mail" required/>
+          <input type="password" name="password" placeholder="Password" minlength="8" maxlength="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+          <input type="password" name="password" placeholder="Retype password" minlength="8" maxlength="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+                                                  
           <button id="signUp" name="signup_submit">Sign me up</button>
         </div>
         <div class="right">
