@@ -9,13 +9,12 @@
 <body>
   <div class="main">
     <p class="sign" align="center">Sign in</p>
-    <form class="form1" action="/auth">
-      <input class="un" type="text" align="center" placeholder="Username" minlength="3" maxlength="20" required >
-      <input class="pass" type="password" align="center" placeholder="Password" type="password" minlength="8" maxlength="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required >
-
-      <button type="submit" class="submit" align="center">Sign in</button>
+    <form class="form1" action="/auth" method="post">
+      <input class="un " type="text" align="center" id="username" name="username" placeholder="Username">
+      <input class="pass" type="password" id="password" name="password" align="center" placeholder="Password">
+      <button class="submit" align="center">Sign in</button>
       <p class="sign-up" align="center">Dont Have an account ? <a href="/signup">Sign up</p>     
-      </form>
+        </form>
     </div>
     <script src="./script/validation.js"></script>
 </body>

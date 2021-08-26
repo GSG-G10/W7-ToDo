@@ -13,17 +13,16 @@ const {
   createUser,
   deleteTask,
   getTasks,
-  // getAuth,
+  getAuthentication,
   clientError,
   serverError,
   addTask,
   signOut,
 } = require('../controllers');
 
-// router.get('/auth', getAuth, loginToken);
-router.get('/auth', loginToken);
-router.get('/home', checkIsUser, homePage);
 router.get('/signin', signIn);
+router.post('/auth', getAuthentication, loginToken);
+router.get('/home', checkIsUser, homePage);
 router.get('/signup', signUp);
 router.post('/addUser', checkData, createUser);
 

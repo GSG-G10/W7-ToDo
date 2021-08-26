@@ -7,6 +7,7 @@ const createUser = require('./createUser');
 
 const addTask = require('./Addtask');
 const deleteTask = require('./deleteTask');
+const getAuthentication = require('./get_auth');
 const getTasks = require('./getTasks');
 const signOut = require('./signOut');
 
@@ -23,4 +24,5 @@ module.exports = {
   addTask,
   createUser,
   signOut,
+  getAuthentication,
 };
