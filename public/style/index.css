@@ -54,3 +54,13 @@ a:focus {
   align-items: center;
   justify-content: center;
 }
+.error {
+  font-size: 12px;
+  padding: 6px 0 4px;
+  color: red;
+  display: block
+}
+
+.error:first-letter {
+  text-transform: uppercase
+}
