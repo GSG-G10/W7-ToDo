@@ -12,7 +12,7 @@ const getAuthentication = (req, res, next) => {
           .then((dbPass) => {
             comparePasswords(password, dbPass).then((condition) => {
               if (condition) {
-                res.redirect('/home');
+                console.log(condition);
                 next();
               } else {
                 res.redirect('/signin');

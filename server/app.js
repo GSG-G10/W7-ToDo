@@ -1,7 +1,8 @@
 require('dotenv').config();
 
-const express = require('express');
 const { join } = require('path');
+
+const express = require('express');
 const compression = require('compression');
 const cookieParser = require('cookie-parser');
 
@@ -9,7 +10,7 @@ const router = require('./router');
 
 const app = express();
 
-app.set('PORT', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3000);
 
 app.disabled('x-powered-by');
 

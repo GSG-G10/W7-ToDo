@@ -28,9 +28,9 @@ body {
   align-items: baseline;
 }
 .topHeader {
-  width: 45%;
+  width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -52,10 +52,20 @@ body {
 #addTaskButton:hover {
   background-color: #d7d8eb;
   cursor: pointer;
+  transition-duration: .4s;
 }
 
 #addTaskButton:active {
   background-color: white;
+}
+#log-out{
+  color: #eeeeee;
+  background-color:transparent;
+  cursor: pointer;
+}
+#log-out:hover{
+  color: #e93535;
+  transition-duration: .4s;
 }
 
 .tasksDiv {
@@ -179,8 +189,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.add,
-.cancel {
+.add{
   color: white;
   background-color: #4044ca;
   border: none;
@@ -189,4 +198,8 @@ body {
   width: 100px;
   height: 40px;
   font-size: 15px;
+  cursor: pointer;
+}
+.add:hover{
+  background-color: #777be0;
 }

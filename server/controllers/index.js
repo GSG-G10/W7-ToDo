@@ -3,12 +3,13 @@ const homePage = require('./home');
 const signIn = require('./signIn/signInPage');
 const signUp = require('./signUp/signUpPage');
 
-const createUser = require('./Create_User');
+const createUser = require('./createUser');
 
 const addTask = require('./Addtask');
-const deleteTask = require('./delete_task');
-const getTasks = require('./get_tasks');
+const deleteTask = require('./deleteTask');
 const getAuthentication = require('./get_auth');
+const getTasks = require('./getTasks');
+const signOut = require('./signOut');
 
 const { clientError, serverError } = require('./error');
 
@@ -22,5 +23,6 @@ module.exports = {
   getTasks,
   addTask,
   createUser,
+  signOut,
   getAuthentication,
 };
